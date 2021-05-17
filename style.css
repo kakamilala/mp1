@@ -1,0 +1,382 @@
+body {
+  margin: 0;
+}
+
+header {
+    background-color: #E0C2B1;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.block_logo {
+    color: #544942;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 0 25% 0 25%;
+    width: 50%;
+    text-align: center;
+}
+
+.block_logo_bottom{
+    color: #544942;
+    font-size: 15px;
+    font-family: monospace;
+    letter-spacing: 3px;
+    font-weight: 200;
+    margin: 0 25% 0 25%;
+    width: 50%;
+    text-align: center;
+}
+
+nav {
+    background-color: #E0C2B1;
+    border-top: #f5dbcc;
+    border-top-width: 1px;
+    border-top-style: solid;
+    padding-left: 10px;
+}
+
+nav div {
+    display: inline-block;
+    background-color:#E0C2B1;
+    border-width: 0;
+    width: 24.5%;
+    margin: auto;
+    color: #544942;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 3px;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+nav div:hover {
+    background-color:  #f5dbcc;
+}
+
+nav div:active {
+    background-color: #E0C2B1;
+}
+
+nav div:focus {
+    outline: none;
+}
+
+.text_header {
+    color: #A18B7F;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 0 25% 0 25%;
+    padding: 10px 0 10px 0;
+    width: 50%;
+    text-align: center;
+    
+}
+.block_about_us{
+  display: flex;
+  align-content: space-between;
+}
+
+.block_about_us ul{
+  margin: 10px;
+}
+
+.text_header_about_us{
+    width: 60%;
+    color: #544942;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 65px;
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 5%;
+
+}
+
+.line{
+  width: 1px;
+  border-right: 2px solid #544942 ;
+}
+
+.text_content_about_us{
+    color: #544942;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.block_about_us, .block_making_an_order {
+    background-color: rgba(237, 206, 187, 0.5);
+    margin: 0;
+    padding: 5px 10% 5px 10%;
+}
+
+footer {
+    background-color: #544942;
+    padding: 20px;
+}
+footer div {
+    color: #f5dbcc;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 5px 0 5px 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+footer .text_header {
+    color: #f5dbcc;
+}
+.text_content {
+    color: #544942;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    
+}
+.block_making_an_order {
+    padding: 5px 10% 5px 10%;
+}
+.contacts_inside{
+  display: flex;
+  align-items: center;
+}
+.contacts_inside div{
+  margin-left: 10px;
+}
+
+.main_list {
+    margin-bottom: 10px;
+}
+
+.block_gallery_out{
+  background-color: rgba(241, 233, 227, 0.5);
+  padding-bottom: 10px;
+}
+.block_gallery{
+  max-width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+.block_gallery img{
+  width: 100%;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.prev:active, .next:active{
+  background-color:transparent;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+footer img{
+  width: 20px;
+}
+
+.up{
+  display:block;
+  position:fixed;
+  bottom:5%;
+  right:5%;
+  width:auto;
+  padding:1%;
+  font-size:20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:  #544942;
+  background-color:  #E0C2B1;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  border-radius:10px;
+}
+
+.modal_back {
+  background: rgba(53, 52, 52, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.modal {
+  width: 70%;
+  height: 70%;
+  border-radius: 3px;
+  color: #544942;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #E0C2B1;
+  padding: 15px;
+}
+.form, .buttons{
+  display: flex;
+}
+.button{
+  justify-content: center;
+}
+.half{
+  justify-content: center;
+  align-items: stretch;
+  width: 50%;
+  margin: 15px;
+}
+.form_name{
+  font-size: 35px;
+  text-align: center;
+}
+.input_half1{
+  display: block;
+  background-color: #f5dbcc;
+  color: #544942;
+  border: none;
+  width: 90%;
+  font-size: 25px;
+  line-height: 30px;
+  border-radius: 3px;
+  margin: 3px 0 3px 0;
+}
+label{
+  display: block;
+}
+.area{
+  width: 100%;
+  margin: 5px;
+}
+.modal_back:target {display: block;}
+.buttons div{
+  display: inline-block;
+}
+
+.button{
+  color: #544942;
+  background-color: #E0C2B1;
+  font-size: 20px;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.button:hover{
+  background-color:  #f5dbcc; 
+  cursor:pointer;
+}
+.button:focus, button:active{
+  outline: none;
+  background-color: #E0C2B1;
+}
+@media (max-width:650px){
+  .block_logo{
+    font-size: 30px;
+  }
+  .block_logo_bottom{
+    font-size: 8px;
+  }
+  nav div {
+    width: 100%;
+    font-size: 12px;
+    padding: auto;
+    margin: 0;
+  }
+  nav{
+    padding: 0;
+  }
+  .text_header{
+    font-size: 20px;
+  }
+  .text_header_about_us{
+    width: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+  }
+  .block_about_us{
+    display:block;
+  }
+  .line{
+    width: 100%;
+    border-bottom: 2px solid #544942 ;
+  }
+  .text_content_about_us{
+    font-size: 15px;
+  }
+  footer div{
+    font-size: 10px;
+  }
+  .text_content{
+    font-size: 15px;
+  }
+  footer img{
+    width: 10px;
+  }
+  .block_gallery{
+    margin: 0;
+    max-width: 100%;
+  }
+  .up{
+    font-size: 15px;
+    padding: 3%;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
